@@ -131,4 +131,3 @@ CHANNEL_LAYERS = {
         },
     },
 }
-Note
