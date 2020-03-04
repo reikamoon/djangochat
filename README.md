@@ -1,1 +1,1 @@
-A chatroom app using Django.
+A chatroom app using Django, Redis, and Channels.
