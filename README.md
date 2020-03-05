@@ -1,14 +1,14 @@
-# Mochi - Mochi! (もしもし)
+# Mochi - Mochi! (もしもし) :dango:
 A chat app made in Django, redis, and Channels.\
 Followed [this tutorial.]( https://channels.readthedocs.io/en/latest/tutorial/part_1.html)
 
-## Chat App
+## Chat App :speech_balloon:
 Chat app is asynchronous and mainly utilizes the Channels library.
 
-## How To
+## How To :page_with_curl:
 Sign up for an account, and once you're logged in, you will be able to access the chatroom.\
 Enter a name for your chatroom, and you're set! :smile:
 
-## Friend Cards
+## Friend Cards :two_women_holding_hands::two_men_holding_hands::couple:
 Create info cards about your friends.\
 Info cards include things like where they're from, what their emails are, etc.
