@@ -5,6 +5,14 @@ Followed [this tutorial.]( https://channels.readthedocs.io/en/latest/tutorial/pa
 ## Chat App :speech_balloon:
 Chat app is asynchronous and mainly utilizes the Channels library.
 
+## Requirements :bookmark_tabs:
+Django 3.0.2 /
+Channels 2.4.0 /
+daphne 2.4.1 /
+Channels-Redis 2.4.2 /
+(The app is deployed on Heroku)
+
+
 ## How To :page_with_curl:
 Sign up for an account, and once you're logged in, you will be able to access the chatroom.\
 Enter a name for your chatroom, and you're set! :smile:
