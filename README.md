@@ -23,4 +23,4 @@ Info cards include things like where they're from, what their emails are, etc.
 
 ## Resources :book:
 [Starry Background](https://gph.is/2dgtwS6)
-[Starry Background2]("https://media.giphy.com/media/U3qYN8S0j3bpK/source.gif")
+[Starry Background2](https://gph.is/2pmBQW1)
