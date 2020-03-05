@@ -7,4 +7,8 @@ Chat app is asynchronous and mainly utilizes the Channels library.
 
 ## How To
 Sign up for an account, and once you're logged in, you will be able to access the chatroom.\
-Enter a name for your chatroom, and you're set! :smile:\
+Enter a name for your chatroom, and you're set! :smile:
+
+## Friend Cards
+Create info cards about your friends.\
+Info cards include things like where they're from, what their emails are, etc.
