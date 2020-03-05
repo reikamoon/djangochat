@@ -1,15 +1,28 @@
+{% load static %}
 <!-- chat/templates/chat/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <title>Chat Rooms</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
+<style>
+body {
+    background: black url("https://media.giphy.com/media/10X5oVBTgURLtC/giphy.gif~c200") repeat;
+}
+h1 {
+  color: white;
+  font-family: 'Raleway', Helvetica;
+}
+</style>
 <body>
-    What chat room would you like to enter?<br/>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <CENTER>
+    <h1>What chat room would you like to enter?</h1><br/>
     <input id="room-name-input" type="text" size="100"/><br/>
     <input id="room-name-submit" type="button" value="Enter"/>
-
+  </center>
     <script>
         document.querySelector('#room-name-input').focus();
         document.querySelector('#room-name-input').onkeyup = function(e) {

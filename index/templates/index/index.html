@@ -55,8 +55,12 @@
 <br>
 <center>
 <h1>Welcome to Mochi-Mochi!</h1>
+{% if request.user.is_authenticated %}
+<h2>Hello, {{ user.username }}!</h2>
+{% else %}
+<h2>Log in to begin.</h2>
 
-
+{% endif %}
 </center>
 </body>
 </html>
