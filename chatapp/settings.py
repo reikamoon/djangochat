@@ -25,7 +25,7 @@ SECRET_KEY = '+n84wtyoe+=m8-2%qwvf#3^)xtjb&*p=sgln1&5p-bcaibpwp('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'mochi-mochi-aa.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -128,6 +128,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Channels
 ASGI_APPLICATION = 'chatapp.routing.application'
