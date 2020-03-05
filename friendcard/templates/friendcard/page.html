@@ -1,4 +1,5 @@
 {% extends 'friendcard/base.html' %}
+
 {% block content %}
 <style>
 
@@ -20,20 +21,11 @@
   }
 
 </style>
+  <div class="row">
+    <div class="col m-4">
+      {% include 'partials/card.html' %}
 
-<center>
-<h1>My Friend Cards</h1>
-<br>
-</center>
-<div class="container">
-{% if cards %}
-    <div class="card-group">
-      {% for card in cards %}
-        {% include "partials/card.html" %}
-      {% endfor %}
+      <a href="{% url 'card-list-page' %}">Back to List</a>
     </div>
-  {% else %}
-    <div class="alert alert-primary" role="alert">No cards available</div>
-  {% endif %}
-</div>
-{% endblock content %}
+  </div>
+{% endblock %}
