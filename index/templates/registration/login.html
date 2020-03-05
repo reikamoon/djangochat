@@ -1,0 +1,44 @@
+<script src="https://kit.fontawesome.com/e7c15fdb77.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% block content %}
+    <h3>Log In <small class="text-muted">to chat</small></h3>
+    <hr>
+    <div class="row">
+        <div class="col">
+            {% if form.errors %}
+                <p>Your username and password didn't match. Please try again.</p>
+            {% endif %}
+
+            {% if next %}
+                {% if user.is_authenticated %}
+                    <p>Your account doesn't have access to this page. To proceed, please login with an account that has access.</p>
+                {% else %}
+                    <p>Please login to see this page.</p>
+                {% endif %}
+            {% endif %}
+
+            <form method="post" action="{% url 'login' %}" class="mx-auto">
+                {% csrf_token %}
+                <div class="form-group row">
+                    <div class="col-8">
+                        <label for="id_username">Username</label>
+                        <input class="form-control" type="text" name="username" id="id_username" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-8">
+                        <label for="id_password">Password</label>
+                        <input class="form-control" type="password" name="password" id="id_password" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-8">
+                        <input type="submit" value="login" class="btn btn-success">
+                        <input type="hidden" name="next" value="{{ next }}">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

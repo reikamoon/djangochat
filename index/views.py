@@ -4,4 +4,8 @@ from django.template.loader import get_template
 
 # Create your views here.
 def IndexView(request):
-    get_template('index.html')
+    user = None
+    auth = request.user.is_authenticated
+    if auth:
+        user = request.user
+    return render(request, 'index/index.html', {'user': user})

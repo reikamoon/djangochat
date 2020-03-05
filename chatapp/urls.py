@@ -23,6 +23,8 @@ urlpatterns = [
     path('chat/', include('chat.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', include('index.urls')),
+    path('signup/', include('accounts.urls')),
+    path('cards/', include('friendcard.urls')),
 
     # Accounts app
 ]

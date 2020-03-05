@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     "channels",
     'index',
     'accounts',
+    'friendcard',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,6 +82,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'TEST': {
+            'NAME': os.path.join(BASE_DIR, 'db_test.sqlite3')
+        }
     }
 }
 
@@ -133,3 +137,7 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+# Redirect URLs
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"

@@ -29,17 +29,17 @@
       </li>
       {% if request.user.is_authenticated %}
       <li class="nav-item">
-        <a class="nav-link" href="#">Log Out</a>
+        <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Chat</a>
+        <a class="nav-link" href="{% url 'index' %}">Chat</a>
       </li>
       {% else %}
       <li class="nav-item">
-        <a class="nav-link" href="#">Log In</a>
+        <a class="nav-link" href="{% url 'login' %}">Log In</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sign Up</a>
+        <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
       </li>
 
       {% endif %}
