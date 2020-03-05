@@ -25,6 +25,6 @@ urlpatterns = [
     path('', include('index.urls')),
     path('signup/', include('accounts.urls')),
     path('cards/', include('friendcard.urls')),
+    path('api/', include('api.urls')),
 
-    # Accounts app
 ]

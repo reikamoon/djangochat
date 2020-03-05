@@ -1,0 +1,40 @@
+{% block content %}
+<style>
+
+  body {
+      height: 1800px;
+      background: linear-gradient(#0066cc 0%, #66b3ff 51%,  #99ccff 75%);
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      background-color: blue;
+      background-repeat: repeat;
+        }
+
+    p {
+      font-size: 20px;
+    }
+
+  h1 {
+    color: white;
+  }
+
+</style>
+{% if request.user.is_authenticated %}
+<center>
+<br>
+<h1>My Friend Cards</h1>
+<br>
+</center>
+<div class="container">
+{% if cards %}
+    <div class="card-columns">
+      {% for card in cards %}
+        {% include "partials/card.html" %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-primary" role="alert">No cards available</div>
+  {% endif %}
+</div>
+{% endif %}
+{% endblock content %}
