@@ -1,1 +1,1 @@
-web: daphne -p $PORT chatapp.asgi:application --log-file -
+web: daphne -p $PORT chatapp.asgi:application
